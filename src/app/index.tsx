@@ -1,5 +1,7 @@
+import { AppHeader } from '@components';
+
 const App = () => {
-  return <>Grodno Regional Children's Clinical Hospital</>;
+  return <AppHeader />;
 };
 
 export default App;
