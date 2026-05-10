@@ -1,0 +1,15 @@
+@use '@styles/spaces' as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: $sp-0;
+}
