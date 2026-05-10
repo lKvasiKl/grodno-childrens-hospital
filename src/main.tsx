@@ -3,6 +3,8 @@ import App from './app';
 
 import '@styles/index.scss';
 
+import './i18n';
+
 const rootElement = document.getElementById('root');
 
 if (!rootElement) {
