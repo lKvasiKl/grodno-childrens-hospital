@@ -1,10 +1,13 @@
 import { Button, Flex } from 'antd';
+import type { ComponentProps } from 'react';
 
 import { SOCIAL_LINKS_ITEMS } from './socialLinks.model';
 
-const SocialLinks = () => {
+type SocialLinksProps = ComponentProps<typeof Flex>;
+
+const SocialLinks = (props: SocialLinksProps) => {
   return (
-    <Flex gap="middle">
+    <Flex gap="middle" {...props}>
       {SOCIAL_LINKS_ITEMS.map(({ href, Icon, key }) => (
         <Button
           key={key}

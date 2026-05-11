@@ -3,6 +3,7 @@ import { Header } from 'antd/es/layout/layout';
 
 import { useTranslation } from 'react-i18next';
 
+import LocaleSwitcher from './LocaleSwitcher';
 import SocialLinks from './SocialLinks';
 import styles from './style.module.scss';
 
@@ -14,7 +15,8 @@ const AppHeader = () => {
       <Button type="primary" className={styles.header__button}>
         {t('buttons.appointmentButton')}
       </Button>
-      <SocialLinks />
+      <SocialLinks className={styles.header__socials} />
+      <LocaleSwitcher className={styles.header__langWrapper} />
     </Header>
   );
 };
