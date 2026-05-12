@@ -1,5 +1,6 @@
 @use '@styles/colors' as *;
 @use '@styles/spaces' as *;
+@use '@styles/breakpoints' as *;
 
 .header {
   display: grid;
@@ -18,5 +19,29 @@
 
   &__socials {
     justify-self: center;
+  }
+
+  @include respond(md) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'socials lang'
+      'button button';
+    row-gap: $sp-2;
+
+    &__socials {
+      grid-area: socials;
+      justify-self: start;
+    }
+
+    &__button {
+      grid-area: button;
+      justify-self: stretch;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  @include respond(sm) {
+    padding: $sp-2;
   }
 }
