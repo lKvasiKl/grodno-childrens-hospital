@@ -1,7 +1,12 @@
-import { AppHeader } from '@components';
+import { AppHeader, HeroBanner } from '@components';
 
 const App = () => {
-  return <AppHeader />;
+  return (
+    <>
+      <AppHeader />
+      <HeroBanner />
+    </>
+  );
 };
 
 export default App;

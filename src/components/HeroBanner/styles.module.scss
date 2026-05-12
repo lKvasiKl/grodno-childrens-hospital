@@ -1,0 +1,10 @@
+@use '@styles/spaces' as *;
+
+.hero {
+  min-height: 200px;
+  background-image: url('/images/hero-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 $sp-2;
+}
