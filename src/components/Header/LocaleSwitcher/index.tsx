@@ -1,19 +1,25 @@
 import { Button, Dropdown } from 'antd';
-import type { ComponentProps } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { getLanguageItems } from './language.lib';
+import { DEFAULT_LANGUAGE, LANGUAGES } from './language.model';
 
-type LocaleSwitcherProps = Omit<ComponentProps<typeof Dropdown>, 'menu'>;
+import styles from './style.module.scss';
 
-const LocaleSwitcher = (props: LocaleSwitcherProps) => {
+const LocaleSwitcher = () => {
   const { i18n } = useTranslation();
 
   const items = getLanguageItems(i18n.changeLanguage);
 
+  const currentLang = LANGUAGES.find((lang) => lang.key === i18n.language) ?? DEFAULT_LANGUAGE;
+  const CurrentFlag = currentLang.Flag;
+
   return (
-    <Dropdown menu={{ items }} placement="bottomRight" {...props}>
-      <Button>{i18n.language.toUpperCase()}</Button>
+    <Dropdown menu={{ items }} placement="bottomRight" trigger={['click']}>
+      <Button ghost className={styles.langButton}>
+        <CurrentFlag />
+        {currentLang.label}
+      </Button>
     </Dropdown>
   );
 };

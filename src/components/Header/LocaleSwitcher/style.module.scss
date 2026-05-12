@@ -1,0 +1,12 @@
+@use '@styles/colors' as *;
+
+.langButton {
+  color: $white;
+  justify-self: end;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    border: none !important;
+  }
+}

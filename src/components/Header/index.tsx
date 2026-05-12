@@ -16,7 +16,7 @@ const AppHeader = () => {
         {t('buttons.appointmentButton')}
       </Button>
       <SocialLinks className={styles.header__socials} />
-      <LocaleSwitcher className={styles.header__langWrapper} />
+      <LocaleSwitcher />
     </Header>
   );
 };
