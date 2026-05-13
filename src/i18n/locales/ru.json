@@ -1,5 +1,6 @@
 {
-    "buttons": {
-        "appointmentButton": "ЗАПИСЬ НА ПРИЕМ К ВРАЧУ"
+  "hospitalName": "Гродненская областная\nдетская клиническая больница",
+  "buttons": {
+    "appointmentButton": "ЗАПИСЬ НА ПРИЕМ К ВРАЧУ"
   }
 }

@@ -1,5 +1,6 @@
 {
-    "buttons": {
-        "appointmentButton": "ЗАПІС НА ПРЫЁМ ДА ЛЕКАРА"
+  "hospitalName": "Гродзенская абласная\nдзіцячая клінічная бальніца",
+  "buttons": {
+    "appointmentButton": "ЗАПІС НА ПРЫЁМ ДА ЛЕКАРА"
   }
 }

@@ -3,7 +3,7 @@ import TelegramIcon from '@assets/icons/telegram.svg?react';
 
 import type { ComponentType, SVGProps } from 'react';
 
-import { SOCIAL_LINKS } from '@shared/config/socials';
+import { LINKS } from '@shared/config/links';
 
 export type SocialLinkItem = {
   key: string;
@@ -14,17 +14,17 @@ export type SocialLinkItem = {
 export const SOCIAL_LINKS_ITEMS: SocialLinkItem[] = [
   {
     key: 'telegram',
-    href: SOCIAL_LINKS.telegram,
+    href: LINKS.social.telegram,
     Icon: TelegramIcon,
   },
   {
     key: 'hospitalInstagram',
-    href: SOCIAL_LINKS.hospitalInstagram,
+    href: LINKS.social.hospitalInstagram,
     Icon: InstagramIcon,
   },
   {
     key: 'tradeUnionInstagram',
-    href: SOCIAL_LINKS.tradeUnionInstagram,
+    href: LINKS.social.tradeUnionInstagram,
     Icon: InstagramIcon,
   },
 ] as const;

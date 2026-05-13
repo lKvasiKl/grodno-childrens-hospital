@@ -1,10 +1,93 @@
+@use '@styles/colors' as *;
 @use '@styles/spaces' as *;
+@use '@styles/breakpoints' as *;
 
 .hero {
   min-height: 200px;
+
   background-image: url('/images/hero-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   padding: 0 $sp-2;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: 'left title right';
+  align-items: center;
+
+  &__symbolsImage {
+    max-width: 180px;
+    height: auto;
+    grid-area: left;
+    justify-self: start;
+  }
+
+  &__title {
+    grid-area: title;
+
+    &:global(.ant-typography) {
+      text-align: center;
+      white-space: pre-line;
+      color: $white;
+
+      text-shadow:
+        0 2px 4px $shadow,
+        0 6px 12px $shadow;
+    }
+  }
+
+  &__link {
+    grid-area: right;
+    justify-self: end;
+
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  /* 📱 tablet */
+  @include respond(md) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'left right'
+      'title title';
+    row-gap: $sp-2;
+
+    &__left {
+      justify-self: start;
+    }
+
+    &__link {
+      justify-self: end;
+    }
+
+    &__title {
+      justify-self: center;
+    }
+  }
+
+  /* 📱 mobile */
+  @include respond(sm) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'left'
+      'title'
+      'right';
+
+    text-align: center;
+    row-gap: $sp-2;
+
+    padding: $sp-2;
+
+    &__left,
+    &__link {
+      justify-self: center;
+    }
+  }
 }

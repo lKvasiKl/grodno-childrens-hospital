@@ -1,5 +1,6 @@
 {
-    "buttons": {
-        "appointmentButton": "DOCTOR APPOINTMENT"
+  "hospitalName": "Grodno Regional\nChildren's Clinical Hospital",
+  "buttons": {
+    "appointmentButton": "DOCTOR APPOINTMENT"
   }
 }
