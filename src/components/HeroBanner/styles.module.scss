@@ -4,7 +4,6 @@
 
 .hero {
   min-height: 200px;
-
   background-image: url('/images/hero-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -18,14 +17,16 @@
   align-items: center;
 
   &__symbolsImage {
-    max-width: 180px;
-    height: auto;
+    width: 100%;
+    max-width: 450px;
+    min-width: 300px;
     grid-area: left;
     justify-self: start;
   }
 
   &__title {
     grid-area: title;
+    padding: 0 $sp-3;
 
     &:global(.ant-typography) {
       text-align: center;
@@ -43,36 +44,36 @@
     justify-self: end;
 
     display: inline-block;
-    cursor: pointer;
     transition: transform 0.2s ease;
+
+    cursor: pointer;
+
+    &__qualityImage {
+      width: 100px;
+    }
 
     &:hover {
       transform: scale(1.05);
     }
   }
 
-  /* 📱 tablet */
   @include respond(md) {
+    padding: $sp-2;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       'left right'
       'title title';
     row-gap: $sp-2;
 
-    &__left {
+    &__symbolsImage {
       justify-self: start;
     }
 
     &__link {
       justify-self: end;
     }
-
-    &__title {
-      justify-self: center;
-    }
   }
 
-  /* 📱 mobile */
   @include respond(sm) {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -80,12 +81,11 @@
       'title'
       'right';
 
-    text-align: center;
     row-gap: $sp-2;
 
     padding: $sp-2;
 
-    &__left,
+    &__symbolsImage,
     &__link {
       justify-self: center;
     }
