@@ -1,10 +1,11 @@
-import { AppHeader, HeroBanner } from '@components';
+import { AppHeader, AppMenu, HeroBanner } from '@components';
 
 const App = () => {
   return (
     <>
       <AppHeader />
       <HeroBanner />
+      <AppMenu />
     </>
   );
 };

@@ -2,5 +2,68 @@
   "hospitalName": "Гродзенская абласная\nдзіцячая клінічная бальніца",
   "buttons": {
     "appointmentButton": "ЗАПІС НА ПРЫЁМ ДА ЛЕКАРА"
+  },
+  "menu": {
+    "home": "Галоўная",
+    "news": "Навіны",
+    "structure": "Структура",
+    "structure.admin": "Адміністрацыя",
+
+    "structure.department": "Аддзяленні",
+    "structure.department.stationary": "Стацыянарныя",
+    "structure.department.therapeutic": "Лячэбна-дыягнастычныя",
+    "structure.department.auxiliary": "Дапаможныя",
+
+    "structure.consultation": "Абласны кансультатыўны прыём",
+
+    "socialLife": "Грамадскае жыццё",
+    "socialLife.tradeUnion": "Прафсаюзная арганізацыя",
+    "socialLife.nursingCouncil": "Савет медыцынскіх сясцёр",
+    "socialLife.brsm": "БРСМ",
+
+    "visitors": "Наведвальнікам",
+    "visitors.homeWithoutViolence": "Дом без гвалту",
+    "visitors.personnel": "Кадры",
+    "visitors.training": "Стажыроўка на працоўным месцы",
+    "visitors.hightechInterventions": "Высокатэхналагічныя ўмяшанні",
+    "visitors.regulatoryDocuments": "Нарматыўныя дакументы",
+    "visitors.legalKnowledgeCorner": "Куток прававых ведаў УАЗ ГрАДКБ",
+
+    "vacancies": "Вакансіі",
+
+    "health": "Здароўе",
+    "health.doctorsAdvice": "Парады лекара",
+    "health.lifestyle": "Здаровы лад жыцця",
+    "health.practiceCase": "Выпадак з практыкі",
+    "health.helplines": "Тэлефоны даверу",
+
+    "paidServices": "Платныя паслугі",
+    "paidServices.belarusCitizens": "Платныя паслугі грамадзянам РБ",
+    "paidServices.foreignCitizens": "Платныя паслугі для замежных грамадзян",
+    "paidServices.withResidencePermit": "Платныя паслугі для замежных грамадзян з відам на жыхарства ў РБ",
+
+    "appeals": "Звароты",
+    "appeals.schedule": "Графік асабістага прыёму грамадзян",
+    "appeals.electronic": "Электронныя звароты",
+    "appeals.directTelephoneLine": "Прамая тэлефонная лінія",
+    "appeals.hotline": "Гарачая тэлефонная лінія",
+    "appeals.receivingProcedure": "Парадак прыёму грамадзян",
+    "appeals.consideringProcedure": "Парадак разгляду зваротаў",
+    "appeals.requirements": "Патрабаванні да электронных зваротаў",
+    "appeals.appealing": "Абскарджанне адказаў на звароты",
+    "appeals.regulatoryDocuments": "Нарматыўныя дакументы",
+
+    "about": "Аб бальніцы",
+    "about.hospitalHistory": "Ад вытокаў да сённяшніх дзён",
+    "about.anticorruption": "Антыкарупцыйная праца",
+    "about.personalDataProtection": "Аб абароне персанальных дадзеных",
+    "about.securityPolicy": "Палітыка ў галіне інфармацыйнай бяспекі",
+    "about.administrativeProcedures": "Адміністрацыйныя працэдуры",
+    "about.safeChildhood": "Бяспечнае дзяцінства",
+    "about.healthyCity": "Гродна - здаровы горад",
+    "about.laborProtection": "Ахова працы",
+    "about.informationDay": "Адзіны дзень інфармавання",
+
+    "contacts": "Кантакты"
   }
 }
