@@ -9,12 +9,14 @@ const qualityImage = '/images/quality-of-services-bel.png';
 
 import { LINKS } from '@shared/config/links';
 
+const QUALITY_IMAGE_WIDTH = 100;
+
 const HeroBanner = () => {
   const { t } = useTranslation();
 
   return (
     <section className={styles.hero}>
-      <Image width={450} preview={false} src={symbolsImage} className={styles.__symbolsImage} />
+      <Image preview={false} src={symbolsImage} className={styles.hero__symbolsImage} />
       <Title className={styles.hero__title}>{t('hospitalName')}</Title>
       <a
         href={LINKS.official.qualityPortal}
@@ -22,7 +24,7 @@ const HeroBanner = () => {
         rel="noreferrer"
         className={styles.hero__link}
       >
-        <Image width={100} preview={false} src={qualityImage} />
+        <Image width={QUALITY_IMAGE_WIDTH} preview={false} src={qualityImage} />
       </a>
     </section>
   );
