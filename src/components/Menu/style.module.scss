@@ -1,9 +1,0 @@
-.menu {
-  justify-content: center;
-
-  &:global(.ant-menu-submenu-popup .ant-menu) {
-    width: 260px;
-    white-space: normal;
-    height: auto;
-  }
-}

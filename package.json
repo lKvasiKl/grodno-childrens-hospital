@@ -11,6 +11,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.2.3",
     "antd": "^6.3.7",
     "i18next": "^26.0.10",
     "i18next-browser-languagedetector": "^8.2.1",

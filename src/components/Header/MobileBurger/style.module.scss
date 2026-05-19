@@ -1,0 +1,36 @@
+@use '@styles/colors' as *;
+@use '@styles/spaces' as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $white;
+}
+
+.drower {
+  :global(.ant-drawer-body) {
+    padding: 0;
+  }
+
+  &__menu {
+    border-inline-end: none;
+
+    :global(.ant-menu-title-content) {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+      line-height: 1.3;
+    }
+
+    :global(.ant-menu-item) {
+      padding: $sp-2 0;
+      height: auto;
+    }
+
+    :global(.ant-menu-submenu-title) {
+      white-space: normal;
+    }
+  }
+}
