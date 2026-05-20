@@ -14,7 +14,7 @@ const AppHeader = ({ isMobile }: { isMobile: boolean }) => {
   return (
     <Header className={styles.header}>
       <Button type="primary" className={styles.header__button}>
-        {t('buttons.appointmentButton')}
+        {t('buttons.appointment')}
       </Button>
       {!isMobile && <SocialLinks className={styles.header__socials} />}
       <LocaleSwitcher className={styles.header__lang} />
