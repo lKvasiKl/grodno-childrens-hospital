@@ -6,7 +6,11 @@ import { useTranslation } from 'react-i18next';
 
 import styles from './style.module.scss';
 
-const MobileBurger = () => {
+type Props = {
+  className?: string;
+};
+
+const MobileBurger = ({ className }: Props) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,14 +30,14 @@ const MobileBurger = () => {
         type="text"
         icon={<MenuOutlined />}
         onClick={handleToggleMenu}
-        className={styles.button}
+        className={`${styles.button} ${className ?? ''}`}
       />
-      <Drawer placement="right" open={isOpen} onClose={handleCloseMenu} className={styles.drower}>
+      <Drawer placement="right" open={isOpen} onClose={handleCloseMenu} className={styles.drawer}>
         <Menu
           mode="inline"
           items={items}
           onClick={handleCloseMenu}
-          className={styles.drower__menu}
+          className={styles.drawer__menu}
         />
       </Drawer>
     </>

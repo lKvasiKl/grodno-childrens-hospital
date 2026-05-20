@@ -19,7 +19,7 @@
   &__symbolsImage {
     width: 100%;
     max-width: 450px;
-    min-width: 300px;
+    min-width: 250px;
     grid-area: left;
     justify-self: start;
   }
@@ -43,7 +43,7 @@
     grid-area: right;
     justify-self: end;
 
-    display: inline-block;
+    display: flex;
     transition: transform 0.2s ease;
 
     cursor: pointer;
@@ -85,7 +85,11 @@
 
     padding: $sp-2;
 
-    &__symbolsImage,
+    &__symbolsImage {
+      display: flex;
+      justify-self: center;
+    }
+
     &__link {
       justify-self: center;
     }

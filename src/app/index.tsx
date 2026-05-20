@@ -3,7 +3,7 @@ import { Grid } from 'antd';
 
 const App = () => {
   const screens = Grid.useBreakpoint();
-  const isMobile = !screens.lg;
+  const isMobile = !screens.md;
 
   return (
     <>

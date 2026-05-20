@@ -8,7 +8,15 @@ const NavBar = () => {
   const { t } = useTranslation();
   const items = getMenuConfig(t);
 
-  return <Menu mode="horizontal" items={items} className={styles.desktopMenu} />;
+  return (
+    <Menu
+      mode="horizontal"
+      items={items}
+      className={styles.desktopMenu}
+      overflowedIndicator={null}
+      disabledOverflow
+    />
+  );
 };
 
 export default NavBar;

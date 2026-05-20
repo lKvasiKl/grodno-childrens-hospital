@@ -17,8 +17,8 @@ const AppHeader = ({ isMobile }: { isMobile: boolean }) => {
         {t('buttons.appointmentButton')}
       </Button>
       <SocialLinks className={styles.header__socials} />
-      <LocaleSwitcher />
-      {isMobile && <MobileBurger />}
+      <LocaleSwitcher className={styles.header__lang} />
+      {isMobile && <MobileBurger className={styles.header__burger} />}
     </Header>
   );
 };
