@@ -4,7 +4,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr auto;
   align-items: center;
 
   padding: $sp-2 $sp-3;
@@ -20,19 +20,31 @@
   }
 
   &__socials {
-    justify-self: center;
+    justify-self: start;
   }
 
   @include respond(md) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-areas:
-      'socials lang'
+      'lang burger'
+      'socials socials'
       'button button';
+
     row-gap: $sp-2;
+
+    &__lang {
+      grid-area: lang;
+      justify-self: start;
+    }
+
+    &__burger {
+      grid-area: burger;
+      justify-self: end;
+    }
 
     &__socials {
       grid-area: socials;
-      justify-self: start;
+      justify-self: center;
     }
 
     &__button {
