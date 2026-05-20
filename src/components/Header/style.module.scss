@@ -27,7 +27,6 @@
     grid-template-columns: auto auto;
     grid-template-areas:
       'lang burger'
-      'socials socials'
       'button button';
 
     row-gap: $sp-2;
@@ -40,11 +39,6 @@
     &__burger {
       grid-area: burger;
       justify-self: end;
-    }
-
-    &__socials {
-      grid-area: socials;
-      justify-self: center;
     }
 
     &__button {
