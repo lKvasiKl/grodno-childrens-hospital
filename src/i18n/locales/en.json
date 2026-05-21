@@ -1,7 +1,13 @@
 {
   "hospitalName": "Grodno Regional\nChildren's Clinical Hospital",
   "buttons": {
-    "appointmentButton": "DOCTOR APPOINTMENT"
+    "appointment": "DOCTOR APPOINTMENT",
+    "tryAgain": "Try again",
+    "reloadPage": "Reload the page"
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "subTitle": "An error occurred while loading the page"
   },
   "menu": {
     "home": "Home",
