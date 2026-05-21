@@ -15,6 +15,7 @@ export default defineConfig({
       '@assets': path.resolve('./src/assets'),
       '@shared/': path.resolve('./src/shared'),
       '@layouts/': path.resolve('./src/layouts'),
+      '@pages/': path.resolve('./src/pages'),
     },
   },
 });

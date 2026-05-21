@@ -28,7 +28,8 @@
       "@styles": ["src/styles"],
       "@assets": ["src/assets"],
       "@shared/*": ["src/shared/*"],
-      "@layouts/*": ["src/layouts/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
   "include": ["src"]

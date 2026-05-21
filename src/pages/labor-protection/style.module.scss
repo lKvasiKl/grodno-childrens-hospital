@@ -1,0 +1,8 @@
+@use '@styles/spaces' as *;
+
+.iframe {
+  border: none;
+  width: 100%;
+  margin-top: $sp-3;
+  height: 900px;
+}

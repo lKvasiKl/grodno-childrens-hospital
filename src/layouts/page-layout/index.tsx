@@ -17,7 +17,7 @@ const PageLayout = ({ title, children }: Props) => {
     <section className={styles.page}>
       <div className={styles.page__container}>
         <Title level={2} className={styles.page__title}>
-          {t(title)}
+          {t(title).toUpperCase()}
         </Title>
         <div className={styles.page__content}>{children}</div>
       </div>
