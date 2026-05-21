@@ -1,0 +1,14 @@
+@use '@styles/colors' as *;
+
+.desktopMenu {
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
+  flex-wrap: wrap;
+  background: $gray;
+  font-size: 16px;
+}
+
+:global(.ant-menu-submenu-popup) {
+  font-size: 16px;
+}

@@ -1,0 +1,23 @@
+@use '@styles/spaces' as *;
+@use '@styles/fonts' as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: $fontFamilyPrimary;
+}
+
+body {
+  background-image: url('/images/hospital-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  margin: $sp-0;
+}

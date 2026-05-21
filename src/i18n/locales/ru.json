@@ -1,0 +1,77 @@
+{
+  "hospitalName": "Гродненская областная\nдетская клиническая больница",
+  "buttons": {
+    "appointment": "ЗАПИСЬ НА ПРИЕМ К ВРАЧУ",
+    "tryAgain": "Попробовать еще раз",
+    "reloadPage": "Перезагрузить страницу"
+  },
+  "errorBoundary": {
+    "title": "Что-то пошло не так",
+    "subTitle": "Во время загрузки страницы произошла ошибка"
+  },
+  "menu": {
+    "home": "Главная",
+    "news": "Новости",
+
+    "structure": "Структура",
+    "structure.admin": "Администрация",
+
+    "structure.department": "Отделения",
+    "structure.department.stationary": "Стационарные",
+    "structure.department.therapeutic": "Лечебно-диагностические",
+    "structure.department.auxiliary": "Вспомогательные",
+
+    "structure.consultation": "Областной консультативный прием",
+
+    "socialLife": "Общественная жизнь",
+    "socialLife.tradeUnion": "Профсоюзная организация",
+    "socialLife.nursingCouncil": "Совет медицинских сестер",
+    "socialLife.brsm": "БРСМ",
+
+    "visitors": "Посетителям",
+    "visitors.homeWithoutViolence": "Дом без насилия",
+    "visitors.personnel": "Кадры",
+    "visitors.training": "Стажировка на рабочем месте",
+    "visitors.hightechInterventions": "Высокотехнологичные вмешательства",
+    "visitors.regulatoryDocuments": "Нормативные документы",
+    "visitors.legalKnowledgeCorner": "Уголок правовых знаний УЗ ГрОДКБ",
+
+    "vacancies": "Вакансии",
+
+    "health": "Здоровье",
+    "health.doctorsAdvice": "Советы врача",
+    "health.lifestyle": "Здоровый образ жизни",
+    "health.practiceCase": "Случай из практики",
+    "health.helplines": "Телефоны доверия",
+
+    "paidServices": "Платные услуги",
+    "paidServices.belarusCitizens": "Платные услуги гражданам РБ",
+    "paidServices.foreignCitizens": "Платные услуги для иностранных граждан",
+    "paidServices.withResidencePermit": "Платные услуги для иностранных граждан с видом на жительство в РБ",
+
+    "appeals": "Обращения",
+    "appeals.schedule": "График личного приема граждан",
+    "appeals.electronic": "Электронные обращения",
+    "appeals.directTelephoneLine": "Прямая телефонная линия",
+    "appeals.hotline": "Горячая телефонная линия",
+    "appeals.receivingProcedure": "Порядок приема граждан",
+    "appeals.consideringProcedure": "Порядок рассмотрения обращений",
+    "appeals.requirements": "Требования к электронным обращениям",
+    "appeals.appealing": "Обжалование ответов на обращения",
+    "appeals.regulatoryDocuments": "Нормативные документы",
+
+    "about": "О больнице",
+    "about.hospitalHistory": "От истоков до сегодняшних дней",
+    "about.anticorruption": "Антикоррупционная работа",
+    "about.personalDataProtection": "О защите персональных данных",
+    "about.securityPolicy": "Политика в области информационной безопасности",
+    "about.administrativeProcedures": "Административные процедуры",
+    "about.safeChildhood": "Безопасное детство",
+    "about.healthyCity": "Гродно - здоровый город",
+    "about.laborProtection": "Охрана труда",
+    "about.informationDay": "Единый день информирования",
+
+    "contacts": "Контакты"
+  },
+  "footer": "УЗ \"Гродненская областная детская клиническая больница\""
+}

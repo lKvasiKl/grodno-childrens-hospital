@@ -1,0 +1,55 @@
+@use '@styles/colors' as *;
+@use '@styles/spaces' as *;
+@use '@styles/breakpoints' as *;
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+
+  padding: $sp-2 $sp-3;
+
+  background-color: $red;
+
+  &__button {
+    justify-self: start;
+    padding: $sp-3;
+    background: $green;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &__socials {
+    justify-self: start;
+  }
+
+  @include respond(md) {
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      'lang burger'
+      'button button';
+
+    row-gap: $sp-2;
+
+    &__lang {
+      grid-area: lang;
+      justify-self: start;
+    }
+
+    &__burger {
+      grid-area: burger;
+      justify-self: end;
+    }
+
+    &__button {
+      grid-area: button;
+      justify-self: stretch;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  @include respond(sm) {
+    padding: $sp-2;
+  }
+}

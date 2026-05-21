@@ -1,0 +1,76 @@
+{
+  "hospitalName": "Grodno Regional\nChildren's Clinical Hospital",
+  "buttons": {
+    "appointment": "DOCTOR APPOINTMENT",
+    "tryAgain": "Try again",
+    "reloadPage": "Reload the page"
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "subTitle": "An error occurred while loading the page"
+  },
+  "menu": {
+    "home": "Home",
+    "news": "News",
+    "structure": "Structure",
+    "structure.admin": "Administration",
+
+    "structure.department": "Departments",
+    "structure.department.stationary": "Stationary",
+    "structure.department.therapeutic": "Therapeutic and diagnostic",
+    "structure.department.auxiliary": "Auxiliary",
+
+    "structure.consultation": "Regional consultation reception",
+
+    "socialLife": "Social life",
+    "socialLife.tradeUnion": "Trade union",
+    "socialLife.nursingCouncil": "Nursing council",
+    "socialLife.brsm": "BRSM",
+
+    "visitors": "For visitors",
+    "visitors.homeWithoutViolence": "Home without violence",
+    "visitors.personnel": "Personnel",
+    "visitors.training": "On-the-job training",
+    "visitors.hightechInterventions": "High-tech iInterventions",
+    "visitors.regulatoryDocuments": "Regulatory documents",
+    "visitors.legalKnowledgeCorner": "Legal knowledge corner of the GRCCH",
+
+    "vacancies": "Vacancies",
+
+    "health": "Health",
+    "health.doctorsAdvice": "Doctor's advice",
+    "health.lifestyle": "Healthy lifestyle",
+    "health.practiceCase": "Case from practice",
+    "health.helplines": "Helplines",
+
+    "paidServices": "Paid services",
+    "paidServices.belarusCitizens": "Paid services for citizens of the Republic of Belarus",
+    "paidServices.foreignCitizens": "Paid services for foreign citizens",
+    "paidServices.withResidencePermit": "Paid services for foreign citizens with a residence permit in the Republic of Belarus",
+
+    "appeals": "Appeals",
+    "appeals.schedule": "Schedule of personal reception of citizens",
+    "appeals.electronic": "Electronic appeals",
+    "appeals.directTelephoneLine": "Direct telephone line",
+    "appeals.hotline": "Hotline",
+    "appeals.receivingProcedure": "Procedure for receiving citizens",
+    "appeals.consideringProcedure": "Procedure for considering appeals",
+    "appeals.requirements": "Requirements for electronic applications",
+    "appeals.appealing": "Appealing responses to appeals",
+    "appeals.regulatoryDocuments": "Regulatory documents",
+
+    "about": "About the hospital",
+    "about.hospitalHistory": "From the origins to the present day",
+    "about.anticorruption": "Anti-corruption work",
+    "about.personalDataProtection": "About the protection of personal data",
+    "about.securityPolicy": "Information Security Policy",
+    "about.administrativeProcedures": "Administrative procedures",
+    "about.safeChildhood": "Safe childhood",
+    "about.healthyCity": "Grodno is a healthy city",
+    "about.laborProtection": "Occupational safety and health",
+    "about.informationDay": "Single Information Day",
+
+    "contacts": "Contacts"
+  },
+  "footer": "HE \"Grodno Regional Children's Clinical Hospital\""
+}

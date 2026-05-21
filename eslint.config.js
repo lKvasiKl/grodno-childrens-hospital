@@ -1,6 +1,5 @@
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
-import importPlugin from 'eslint-plugin-import';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import { defineConfig, globalIgnores } from 'eslint/config';
@@ -12,10 +11,6 @@ export default defineConfig([
 
   {
     files: ['**/*.{ts,tsx}'],
-
-    plugins: {
-      import: importPlugin,
-    },
 
     extends: [
       js.configs.recommended,
@@ -46,29 +41,7 @@ export default defineConfig([
       'react/jsx-uses-react': 'off',
       'react/display-name': 'off',
 
-      'prettier/prettier': 'warn',
-
       'import/no-unresolved': 'off',
-
-      'import/order': [
-        'warn',
-        {
-          'newlines-between': 'always',
-          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-          pathGroups: [
-            {
-              pattern: '@/**',
-              group: 'internal',
-              position: 'after',
-            },
-          ],
-          pathGroupsExcludedImportTypes: ['builtin'],
-          alphabetize: {
-            order: 'asc',
-            caseInsensitive: true,
-          },
-        },
-      ],
     },
   },
 ]);

@@ -1,0 +1,24 @@
+@use '@styles/colors' as *;
+@use '@styles/spaces' as *;
+
+.langButton {
+  color: $white;
+  justify-self: end;
+  border: none;
+  font-weight: bold;
+
+  svg {
+    filter: drop-shadow(0 3px 6px $shadow);
+  }
+
+  &:hover {
+    border: none !important;
+  }
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: $sp-2;
+  font-weight: bold;
+}

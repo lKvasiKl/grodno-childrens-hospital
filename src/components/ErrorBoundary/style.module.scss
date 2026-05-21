@@ -1,0 +1,15 @@
+@use '@styles/spaces' as *;
+@use '@styles/mixins' as *;
+
+.errorBoundary {
+  @include flex-center;
+  padding: $sp-3;
+
+  :global(.ant-result) {
+    max-width: 600px;
+  }
+
+  &__error {
+    text-align: left;
+  }
+}
