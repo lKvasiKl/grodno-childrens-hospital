@@ -1,5 +1,6 @@
-import { AppFooter, AppHeader, ErrorBoundary, HeroBanner, NavBar } from '@components';
+import { ErrorBoundary } from '@components';
 import { Grid } from 'antd';
+import { Router } from './router';
 
 const App = () => {
   const screens = Grid.useBreakpoint();
@@ -7,10 +8,7 @@ const App = () => {
 
   return (
     <ErrorBoundary>
-      <AppHeader isMobile={isMobile} />
-      <HeroBanner />
-      {!isMobile && <NavBar />}
-      <AppFooter isMobile={isMobile} />
+      <Router isMobile={isMobile} />
     </ErrorBoundary>
   );
 };
