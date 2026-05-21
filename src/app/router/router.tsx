@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import PageLayout from '@layouts/page-layout';
 import { ROUTES } from '@shared/navigation/routes';
 
 export const Router = ({ isMobile }: { isMobile: boolean }) => {
@@ -12,7 +13,7 @@ export const Router = ({ isMobile }: { isMobile: boolean }) => {
       <Suspense fallback={<Spin fullscreen size="large" />}>
         <Routes>
           <Route element={<AppLayout isMobile={isMobile} />}>
-            <Route path={ROUTES.HOME} element={<div>Home</div>} />
+            <Route path={ROUTES.HOME} element={<PageLayout title="Home">HOME PAGE</PageLayout>} />
           </Route>
         </Routes>
       </Suspense>

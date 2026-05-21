@@ -12,7 +12,7 @@
 
 .drawer {
   :global(.ant-drawer-body) {
-    padding: 0;
+    padding: $sp-0;
   }
 
   :global(.ant-drawer-header) {
@@ -34,7 +34,7 @@
     }
 
     :global(.ant-menu-item) {
-      padding: $sp-2 0;
+      padding: $sp-2 $sp-0;
       height: auto;
     }
 
