@@ -1,5 +1,9 @@
+import * as Sentry from '@sentry/react';
+import { Button, Result } from 'antd';
 import React, { type ErrorInfo, type ReactNode } from 'react';
 import i18n from 'src/i18n';
+
+import styles from './style.module.scss';
 
 type Props = {
   children: ReactNode;
@@ -24,7 +28,11 @@ class ErrorBoundary extends React.Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('ErrorBoundary caught an error:', error, errorInfo);
+    Sentry.captureException(error, {
+      extra: {
+        componentStack: errorInfo.componentStack,
+      },
+    });
   }
 
   handleReset = () => {
@@ -34,18 +42,34 @@ class ErrorBoundary extends React.Component<Props, State> {
     });
   };
 
+  handleReload = () => {
+    window.location.reload();
+  };
+
   render() {
     const { hasError, error } = this.state;
     const { children } = this.props;
 
     if (hasError) {
       return (
-        <div>
-          <h2>{i18n.t('errorBoundary')}</h2>
-
-          <p>{error?.message}</p>
-
-          <button onClick={this.handleReset}>{i18n.t('buttons.errorBoundary')}</button>
+        <div className={styles.errorBoundary}>
+          <Result
+            status="error"
+            title={i18n.t('errorBoundary.title')}
+            subTitle={i18n.t('errorBoundary.subTitle')}
+            extra={[
+              <Button type="primary" onClick={this.handleReset} key="reset">
+                {i18n.t('buttons.tryAgain')}
+              </Button>,
+              <Button onClick={this.handleReload} key="reload">
+                {i18n.t('buttons.reloadPage')}
+              </Button>,
+            ]}
+          >
+            {import.meta.env.DEV && (
+              <pre className={styles.errorBoundary__error}>{error?.message}</pre>
+            )}
+          </Result>
         </div>
       );
     }

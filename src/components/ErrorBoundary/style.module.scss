@@ -1,0 +1,17 @@
+@use '@styles/spaces' as *;
+
+.errorBoundary {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $sp-3;
+
+  :global(.ant-result) {
+    max-width: 600px;
+  }
+
+  &__error {
+    text-align: left;
+  }
+}
