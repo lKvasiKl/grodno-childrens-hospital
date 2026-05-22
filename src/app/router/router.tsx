@@ -5,9 +5,10 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import PageLayout from '@layouts/page-layout';
+import AdministrativeProceduresPage from '@pages/about/administration-procedure';
 import { ROUTES } from '@shared/navigation/routes';
 
-const LaborProtactionPage = lazy(() => import('@pages/labor-protection'));
+const LaborProtactionPage = lazy(() => import('@pages/about/labor-protection'));
 
 export const Router = ({ isMobile }: { isMobile: boolean }) => {
   return (
@@ -17,6 +18,10 @@ export const Router = ({ isMobile }: { isMobile: boolean }) => {
           <Route element={<AppLayout isMobile={isMobile} />}>
             <Route path={ROUTES.HOME} element={<PageLayout title="Home">HOME PAGE</PageLayout>} />
 
+            <Route
+              path={ROUTES.ABOUT.ADMINISTRATIVE_PROCEDURES}
+              element={<AdministrativeProceduresPage />}
+            />
             <Route path={ROUTES.ABOUT.LABOR_PROTECTION} element={<LaborProtactionPage />} />
           </Route>
         </Routes>
