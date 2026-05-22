@@ -229,9 +229,10 @@ export const getMenuConfig = (t: TFunction): MenuItem[] => [
         label: t('menu.about.anticorruption'),
       },
       {
-        type: MENU_ITEM_TYPE.INTERNAL,
-        key: ROUTES.ABOUT.PERSONAL_DATA_PROTECTION,
+        type: MENU_ITEM_TYPE.EXTERNAL,
+        key: 'personal-data-protaction',
         label: t('menu.about.personalDataProtection'),
+        href: EXTERNAL_LINKS.PERSONAL_DATA_PROTACTION,
       },
       {
         type: MENU_ITEM_TYPE.INTERNAL,

@@ -67,7 +67,6 @@ export const ROUTES = {
     ROOT: '/about',
     HOSPITAL_HISTORY: '/about/hospital-history',
     ANTI_CORRUPTION: '/about/anti-corruption',
-    PERSONAL_DATA_PROTECTION: '/about/personal-data-protection',
     SECURITY_POLICY: '/about/security-policy',
     ADMINISTRATIVE_PROCEDURES: '/about/administrative-procedures',
     LABOR_PROTECTION: '/about/labor-protection',
