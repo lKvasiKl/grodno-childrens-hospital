@@ -70,10 +70,7 @@ export const ROUTES = {
     PERSONAL_DATA_PROTECTION: '/about/personal-data-protection',
     SECURITY_POLICY: '/about/security-policy',
     ADMINISTRATIVE_PROCEDURES: '/about/administrative-procedures',
-    SAFE_CHILDHOOD: '/about/safe-childhood',
-    HEALTHY_CITY: '/about/healthy-city',
     LABOR_PROTECTION: '/about/labor-protection',
-    INFORMATION_DAY: '/about/information-day',
   },
 
   CONTACTS: '/contacts',

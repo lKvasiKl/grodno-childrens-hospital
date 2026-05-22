@@ -1,9 +1,13 @@
 import { MenuOutlined } from '@ant-design/icons';
 import { getMenuConfig } from '@shared/navigation/navigation.config';
+import { MENU_ITEM_TYPE } from '@shared/navigation/types';
 import { Button, Drawer, Menu } from 'antd';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
+
+import { buildMenuIndex } from '@shared/navigation/build-menu-index';
+import { mapMenuItems } from '@shared/navigation/map-menu-items';
 
 import styles from './style.module.scss';
 
@@ -18,10 +22,12 @@ const MobileBurger = ({ className }: Props) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const items = getMenuConfig(t);
+  const menu = getMenuConfig(t);
+
+  const menuIndex = useMemo(() => buildMenuIndex(menu), [menu]);
 
   const handleToggleMenu = () => {
-    setIsOpen((prevState) => !prevState);
+    setIsOpen((prev) => !prev);
   };
 
   const handleCloseMenu = () => {
@@ -29,6 +35,14 @@ const MobileBurger = ({ className }: Props) => {
   };
 
   const handleMenuClick = ({ key }: { key: string }) => {
+    const item = menuIndex.get(key);
+
+    if (item?.type === MENU_ITEM_TYPE.EXTERNAL) {
+      window.open(item.href, '_blank', 'noopener,noreferrer');
+      handleCloseMenu();
+      return;
+    }
+
     navigate(key);
     handleCloseMenu();
   };
@@ -41,10 +55,11 @@ const MobileBurger = ({ className }: Props) => {
         onClick={handleToggleMenu}
         className={`${styles.button} ${className ?? ''}`}
       />
+
       <Drawer placement="right" open={isOpen} onClose={handleCloseMenu} className={styles.drawer}>
         <Menu
           mode="inline"
-          items={items}
+          items={mapMenuItems(menu)}
           onClick={handleMenuClick}
           selectedKeys={[location.pathname]}
           className={styles.drawer__menu}
