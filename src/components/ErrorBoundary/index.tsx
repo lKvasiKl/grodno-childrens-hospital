@@ -55,8 +55,8 @@ class ErrorBoundary extends React.Component<Props, State> {
         <div className={styles.errorBoundary}>
           <Result
             status="error"
-            title={i18n.t('errorBoundary.title')}
-            subTitle={i18n.t('errorBoundary.subTitle')}
+            title={i18n.t('error.title')}
+            subTitle={i18n.t('error.subTitle')}
             extra={[
               <Button type="primary" onClick={this.handleReset} key="reset">
                 {i18n.t('buttons.tryAgain')}

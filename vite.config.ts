@@ -16,6 +16,10 @@ export default defineConfig({
       '@shared/': path.resolve('./src/shared'),
       '@layouts/': path.resolve('./src/layouts'),
       '@pages/': path.resolve('./src/pages'),
+      '@api/': path.resolve('./src/api'),
+      '@providers/': path.resolve('./src/providers'),
+      '@hooks/': path.resolve('./src/hooks'),
+      '@utils/': path.resolve('./src/utils'),
     },
   },
 });

@@ -29,7 +29,11 @@
       "@assets": ["src/assets"],
       "@shared/*": ["src/shared/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@pages/*": ["src/pages/*"]
+      "@pages/*": ["src/pages/*"],
+      "@api/*": ["src/api/*"],
+      "@providers/*": ["src/providers/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
   "include": ["src"]

@@ -4,6 +4,7 @@ import App from './app';
 
 import '@styles/index.scss';
 
+import { QueryProvider } from '@providers/query-provider';
 import './i18n';
 
 Sentry.init({
@@ -20,4 +21,8 @@ if (!rootElement) {
 
 const root = createRoot(rootElement);
 
-root.render(<App />);
+root.render(
+  <QueryProvider>
+    <App />
+  </QueryProvider>,
+);

@@ -3,11 +3,13 @@
   "buttons": {
     "appointment": "DOCTOR APPOINTMENT",
     "tryAgain": "Try again",
-    "reloadPage": "Reload the page"
+    "reloadPage": "Reload the page",
+    "backToHomePage": "Back to home page"
   },
-  "errorBoundary": {
+  "error": {
     "title": "Something went wrong",
-    "subTitle": "An error occurred while loading the page"
+    "subTitle": "An error occurred while loading the page",
+    "notFound": "Page not found"
   },
   "menu": {
     "home": "Home",
