@@ -6,7 +6,7 @@ import RuFlag from '@assets/icons/ru.svg?react';
 
 export const LANGUAGE_KEYS = {
   BE: 'be',
-  GB: 'gb',
+  GB: 'en',
   RU: 'ru',
 } as const;
 
