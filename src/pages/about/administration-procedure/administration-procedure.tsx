@@ -1,11 +1,11 @@
-import { PdfViewerPage } from '@pages/components/PdfViewerPage';
-import { ADMINISTRATIVE_PROCEDURES_PDF } from '@shared/constants/documents';
+import PageLayout from '@layouts/page-layout';
+import { DocumentsBlock } from '@pages/components/DocumentsBlock';
+import { t } from 'i18next';
 
 export const AdministrativeProceduresPage = () => {
   return (
-    <PdfViewerPage
-      title="menu.about.administrativeProcedures"
-      src={ADMINISTRATIVE_PROCEDURES_PDF}
-    />
+    <PageLayout title={t('menu.about.administrativeProcedures')}>
+      <DocumentsBlock category="administrative-procedure" />
+    </PageLayout>
   );
 };
