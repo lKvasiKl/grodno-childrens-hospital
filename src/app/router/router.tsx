@@ -10,6 +10,7 @@ import { ROUTES } from '@shared/navigation/routes';
 const NotFoundPage = lazy(() => import('@pages/not-found'));
 
 const HospitalHistoryPage = lazy(() => import('@pages/about/hospital-history'));
+const AntiCorruptionWorkPage = lazy(() => import('@pages/about/anti-corruption-work'));
 const SecurityPolicyPage = lazy(() => import('@pages/about/security-policy'));
 const AdministrativeProceduresPage = lazy(() => import('@pages/about/administration-procedure'));
 const LaborProtactionPage = lazy(() => import('@pages/about/labor-protection'));
@@ -23,6 +24,7 @@ export const Router = ({ isMobile }: { isMobile: boolean }) => {
             <Route path={ROUTES.HOME} element={<PageLayout title="Home">HOME PAGE</PageLayout>} />
 
             <Route path={ROUTES.ABOUT.HOSPITAL_HISTORY} element={<HospitalHistoryPage />} />
+            <Route path={ROUTES.ABOUT.ANTI_CORRUPTION} element={<AntiCorruptionWorkPage />} />
             <Route path={ROUTES.ABOUT.SECURITY_POLICY} element={<SecurityPolicyPage />} />
             <Route
               path={ROUTES.ABOUT.ADMINISTRATIVE_PROCEDURES}

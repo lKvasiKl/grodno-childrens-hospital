@@ -1,0 +1,21 @@
+@use '@styles/spaces' as *;
+@use '@styles/breakpoints' as *;
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: $sp-2;
+  margin-top: $sp-2;
+
+  @include respond(lg) {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  @include respond(sm) {
+    grid-template-columns: 300px;
+  }
+
+  @include respond(xs) {
+    grid-template-columns: 1fr;
+  }
+}

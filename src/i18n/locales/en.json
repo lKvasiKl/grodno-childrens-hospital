@@ -9,7 +9,8 @@
   "error": {
     "title": "Something went wrong",
     "subTitle": "An error occurred while loading the page",
-    "notFound": "Page not found"
+    "notFound": "Page not found",
+    "docsNotFound": "Documents not found"
   },
   "menu": {
     "home": "Home",

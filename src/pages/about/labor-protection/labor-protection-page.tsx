@@ -1,6 +1,11 @@
-import { PdfViewerPage } from '@pages/components/PdfViewerPage';
-import { LABOR_PROTECTION_PDF } from '@shared/constants/documents';
+import PageLayout from '@layouts/page-layout';
+import { DocumentsBlock } from '@pages/components/DocumentsBlock';
+import { t } from 'i18next';
 
 export const LaborProtactionPage = () => {
-  return <PdfViewerPage title="menu.about.laborProtection" src={LABOR_PROTECTION_PDF} />;
+  return (
+    <PageLayout title={t('menu.about.laborProtection')}>
+      <DocumentsBlock category="labor-protection" />
+    </PageLayout>
+  );
 };

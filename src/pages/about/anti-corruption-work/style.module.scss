@@ -1,0 +1,8 @@
+@use '@styles/spaces' as *;
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $sp-2;
+  margin-top: $sp-3;
+}

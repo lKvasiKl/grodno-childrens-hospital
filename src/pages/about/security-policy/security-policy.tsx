@@ -1,6 +1,11 @@
-import { PdfViewerPage } from '@pages/components/PdfViewerPage';
-import { SECURITY_POLICY_PDF } from '@shared/constants/documents';
+import PageLayout from '@layouts/page-layout';
+import { DocumentsBlock } from '@pages/components/DocumentsBlock';
+import { t } from 'i18next';
 
 export const SecurityPolicyPage = () => {
-  return <PdfViewerPage title="menu.about.securityPolicy" src={SECURITY_POLICY_PDF} />;
+  return (
+    <PageLayout title={t('menu.about.securityPolicy')}>
+      <DocumentsBlock category="security-policy" />
+    </PageLayout>
+  );
 };
